@@ -1,0 +1,76 @@
+body {
+    background-color:#dddddd;
+    background-image: url("images/bg2.png");
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #2b4379;
+    display: flex;      /* .boxes and so on will all stack vertically */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+
+}
+
+.box {      /* main container,makes images/names container and randomize button stack vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 20px;
+    border-color: #2b4379;
+    background-color: rgba(255,255,255,0.6);
+    padding: 25px 0px 25px 25px;
+    font-family: 'Trebuchet MS';
+}
+
+.headerbox {
+    padding: 20px 25px;
+    font-size: 34px;
+}
+
+.rowbox {       /* puts the images/names (imgbox) boxes side-by-side flexibly */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgbox {       /* contains image and its name, stacked on top of each other */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.namebox {      /* formatting for colorway name container */
+    background-color: #ffffff;
+    font-size: 22px;
+    padding: 8px 14px;
+    text-align: center;
+    margin-left: -25px;
+}
+
+.img img {      /* all colorways get resized to 250px */
+    width: 250px;
+    height: 250px;
+    margin-right: 25px;
+}
+
+button {
+    color: #2b4379;
+    background-color: #ffffff;
+    border-color: #2b4379;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
