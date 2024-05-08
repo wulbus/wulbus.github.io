@@ -1,0 +1,60 @@
+body {
+  background-color:#dddddd;
+  background-image: url("images/bg2.png");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #314e91;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/*    NAVIGATION   */
+
+#nav-bar {
+  position: relative;
+  height: 100vh;
+  width: 280px;
+  left: 10%;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Allura'; font-size: 23px;
+}
+
+#nav-header  {
+  margin-bottom: 12px;
+  padding: 3px 3px;
+  font-size: 45px;
+  background-color: rgba(255, 255, 255, 0.65);
+  /*  margin-block-start: -10px;  moves contents up or down on in bar if desired  */
+}
+
+.nav-button:link {
+  background-color: rgba(255, 255, 255, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 6px
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*    LINKS   */
+
+a:link {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #314e91;
+  background-color: transparent;
+  text-decoration: none;
+}
