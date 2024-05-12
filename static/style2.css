@@ -4,7 +4,7 @@ body {
   background-position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   color: #314e91;
   height: 100vh;
   margin: 0;
@@ -64,13 +64,13 @@ a:visited {
 
 .grid-container {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: calc(11% + 280px);
   display: grid;
-  grid-template-columns: 300px 300px;
-  grid-template-rows: 300px 300px 300px;
-  grid-gap: 15px;
-  padding: 15px 15px;
+  grid-template-columns: 350px 350px;
+  grid-template-rows: 350px 350px 350px;
+  grid-gap: 20px;
+  padding: 20px 20px;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -81,6 +81,6 @@ a:visited {
     background-color: rgba(255, 255, 255, 0.4);
 }
 .item img {      /* all colorways get resized to 250px */
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 88%;
+  max-height: 88%;
 }

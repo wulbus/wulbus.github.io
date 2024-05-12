@@ -6,7 +6,7 @@
     <meta name ="viewport" content="initial-scale=1", width="device-width">
     <title>Yarn Combo Generator</title>
     <link rel="stylesheet" href="../static/style.css">
-    <script src="http://kit.fontawesome.com/9cffb2521e.js" crossorigin="anonymous"></script>    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/9cffb2521e.js" crossorigin="anonymous"></script>    <!--FontAwesome-->
 </head>
 
 <body>
@@ -14,27 +14,39 @@
         <div class="box">
             <div class="rowbox">
                 <div class="imgbox img">
-                    <img id="randomImage1" src="../static/images/semolina.jpg" alt="">
+                    <img class="box" id="randomColor1" src="../static/images/semolina.jpg" alt="Semolina">
                     <p class="namebox" id="randomColorName1">Semolina</p>
+                    <p>
+                        <select id="select-tone1">
+                            <option value="all">Choose Tone</option>
+                            <option value="warm">Warm</option>
+                            <option value="cool">Cool</option>
+                            <option value="neutral">Neutral</option>
+                        </select>
+                    </p>
                 </div>
 
                 <div class="imgbox img">
-                    <img id="randomImage2" src="../static/images/tarragon.jpg" alt="">
-                    <p class="namebox" id="randomColorName2">Tarragon</p>
+                    <img class="box" id="randomColor2" src="../static/images/tarragon.jpg" alt="Tarragon">
+                    <p class="box namebox" id="randomColorName2">Tarragon</p>
+                    <p>
+                        <select id="select-tone2">
+                            <option value="all">Choose Tone</option>
+                            <option value="warm">Warm</option>
+                            <option value="cool">Cool</option>
+                            <option value="neutral">Neutral</option>
+                        </select>
+                    </p>
                 </div>
             </div>
 
-            <button id="randomButton">Randomize</button>
+            <button id="randomButton" class="pointer">Randomize <span class="fa-solid fa-rotate"></span></button>
             <br>
             <a href="{{ url_for('shop')}}">Shop</a>
         </div>
 
         <script src="../static/colors.js"></script>
         <script src="../static/getRandomImage.js"></script>
-
-        <script>
-            document.getElementById('randomButton').addEventListener('click', function() {getRandomImage();});
-        </script>
 
     </body>
 </html>

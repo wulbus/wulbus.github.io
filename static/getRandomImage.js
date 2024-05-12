@@ -1,20 +1,38 @@
-// this is a function we're creating
+document.addEventListener('DOMContentLoaded', function() {     
+    document.getElementById('randomButton').addEventListener('click', function() {
+        getRandomImage();
+    });
+});
 
 function getRandomImage() {
-    // Math.random produces floating point # from 0-1(non-inclusive)
-    // colors.length scales that up to how many indices are in the array
-    // Math.floor is performed on the result to round to nearest integer, giving us a random index 0-69 as of now
-    let randomIndex1, randomIndex2;     // let instead of const bc numbers will be reassigned in the loop
+    const selectedTone1 = document.getElementById('select-tone1').value;
+    const selectedTone2 = document.getElementById('select-tone2').value;
+
+    let filteredColors1;
+        if (selectedTone1 === 'all') {
+            filteredColors1 = colors; // Display all colors if 'All' is selected
+        } else {
+            filteredColors1 = colors.filter(color => color.tone === selectedTone1);
+        }
+
+    let filteredColors2;
+        if (selectedTone2 === 'all') {
+            filteredColors2 = colors;
+    } else {
+        filteredColors2 = colors.filter(color => color.tone === selectedTone2);
+    }
+
+    let randomColor1, randomColor2;
     do {
-        randomIndex1 = Math.floor(Math.random() * colors.length);
-        randomIndex2 = Math.floor(Math.random() * colors.length);
-    } while (randomIndex1 === randomIndex2);
-    // gets us the random color object associated with the integers assigned to randomIndex1 and 2
-    const randomColor1 = colors[randomIndex1];
-    const randomColor2 = colors[randomIndex2];
+        randomIndex1 = Math.floor(Math.random() * filteredColors1.length);
+        randomIndex2 = Math.floor(Math.random() * filteredColors2.length);
+        randomColor1 = filteredColors1[randomIndex1];
+        randomColor2 = filteredColors2[randomIndex2];
+    } while (randomColor1 === randomColor2);
+
     // Get the image element by its ID (the randomImage box in the html)
-    const imageElement1 = document.getElementById('randomImage1');
-    const imageElement2 = document.getElementById('randomImage2');
+    const imageElement1 = document.getElementById('randomColor1');
+    const imageElement2 = document.getElementById('randomColor2');
     // Set the src attribute of the image element to the URL of the random color
     imageElement1.src = randomColor1.url;
     imageElement2.src = randomColor2.url;
