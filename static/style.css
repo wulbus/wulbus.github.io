@@ -4,6 +4,7 @@ body {
     background-position: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     color: #314e91;
     display: flex;      /* .boxes and so on will all stack vertically */
     flex-direction: column;
@@ -11,10 +12,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    padding: 0;
 }
 
-.box {      /* main container,makes images/names container and randomize button stack vertically */
+.box {      /* main container, makes images/names container and randomize button stack vertically */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,11 +25,12 @@ body {
     border-color: #314e91;
     background-color: rgba(255,255,255,0.6);
     font-family: 'Trebuchet MS';
+    margin: 5px;
 }
 
 .headerbox {
     padding: 20px 25px;
-    font-size: 34px;
+    font-size: 30px;
 }
 
 .rowbox {       /* puts the images w/ info and options side-by-side flexibly */
@@ -37,10 +38,10 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 20px 0px 20px 20px;
+    padding: 20px 0px 0px 20px;
 }
 
-.imgbox {       /* contains image and its name, stacked on top of each other */
+.imgbox {       /* contains lock option, image and all related contents  */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,35 +49,47 @@ body {
     margin-right: 20px;
 }
 
-.namebox {      /* formatting for colorway name container */
-    background-color: #ffffff;
-    border: 2px solid #314e91;
-    font-size: 22px;
-    padding: 8px 14px;
-    text-align: center;
+.iconbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     border-style: solid;
     border-width: 2px;
     border-radius: 12px;
     border-color: #314e91;
+    background-color: #ffffff;
+    padding: 18px 12px;
+    margin-bottom: 10px;
+    color: #314e91;
+    }
+
+.namebox {      /* formatting for colorway name container */
+    background-color: #ffffff;
+    border: 2px solid #314e91;
+    font-size: 20px;
+    padding: 8px 14px;
+    text-align: center;
+    border-radius: 12px;
     background-color: #ffffff;
     font-family: 'Trebuchet MS';
     margin: 10px;
 }
 
 .imgbox img {      /* all colorways get resized to 250px */
-    width: 275px;
-    height: 275px;
+    width: 250px;
+    height: 250px;
     border: 2px solid #314e91;
     border-radius: 12px;
     padding: 0px;
 }
 
-button {
+.random-button {
     color: #314e91;
     background-color: #ffffff;
     border-color: #314e91;
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     border-radius: 12px;
     justify-content: center;
     align-items: center;
@@ -84,6 +97,7 @@ button {
     text-align: center;
     text-decoration: none;
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .pointer  {

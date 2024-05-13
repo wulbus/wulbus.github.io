@@ -147,7 +147,7 @@
         id: 24,
         name: "Custard",
         url: "../static/images/custard.jpg",
-        tone: "neutral"
+        tone: "warm"
     },
     {
         id: 25,
@@ -429,6 +429,12 @@
         id: 71,
         name: "Semolina",
         url: "../static/images/semolina.jpg",
+        tone: "warm"
+    },
+    {
+        id: 72,
+        name: "Pimento",
+        url: "..static/images/pimento.jpg",
         tone: "warm"
     }
 ];

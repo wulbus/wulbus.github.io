@@ -14,6 +14,7 @@
         <div class="box">
             <div class="rowbox">
                 <div class="imgbox img">
+                    <button id="lock2" class="iconbox pointer"><span class="fa-solid fa-unlock fa-xl"></span></button>
                     <img class="box" id="randomColor1" src="../static/images/semolina.jpg" alt="Semolina">
                     <p class="namebox" id="randomColorName1">Semolina</p>
                     <p>
@@ -27,6 +28,7 @@
                 </div>
 
                 <div class="imgbox img">
+                    <button id="lock2" class="iconbox pointer"><span class="fa-solid fa-unlock fa-xl"></span></button>
                     <img class="box" id="randomColor2" src="../static/images/tarragon.jpg" alt="Tarragon">
                     <p class="box namebox" id="randomColorName2">Tarragon</p>
                     <p>
@@ -40,9 +42,7 @@
                 </div>
             </div>
 
-            <button id="randomButton" class="pointer">Randomize <span class="fa-solid fa-rotate"></span></button>
-            <br>
-            <a href="{{ url_for('shop')}}">Shop</a>
+            <button id="randomButton" class="pointer random-button">Randomize <span class="fa-solid fa-rotate fa-lg"></span></button>
         </div>
 
         <script src="../static/colors.js"></script>
