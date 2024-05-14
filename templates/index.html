@@ -11,42 +11,80 @@
 
 <body>
     <h1 class="box headerbox" style="font-family: 'Trebuchet MS', Arial, sans-serif">Colorway Randomizer</h1>
-        <div class="box">
-            <div class="rowbox">
-                <div class="imgbox img">
-                    <button id="lock2" class="iconbox pointer"><span class="fa-solid fa-unlock fa-xl"></span></button>
-                    <img class="box" id="randomColor1" src="../static/images/semolina.jpg" alt="Semolina">
-                    <p class="namebox" id="randomColorName1">Semolina</p>
-                    <p>
-                        <select id="select-tone1">
-                            <option value="all">Choose Tone</option>
-                            <option value="warm">Warm</option>
-                            <option value="cool">Cool</option>
-                            <option value="neutral">Neutral</option>
-                        </select>
-                    </p>
+    <div class="box">
+        <div class="rowbox">
+            <div class="imgbox img">
+                <button class="toggle-lock iconbox pointer"><span id="lock1" class="toggle-icon fa-solid fa-unlock fa-xl"></span></button>
+                <img class="box" id="randomColor1" src="../static/images/semolina.jpg" alt="Semolina">
+                <p class="namebox" id="randomColorName1">Semolina</p>
+                <div>
+                    <select id="select-tone1">
+                        <option value="all">Choose Tone</option>
+                        <option value="warm">Warm</option>
+                        <option value="cool">Cool</option>
+                        <option value="neutral">Neutral</option>
+                    </select>
                 </div>
 
-                <div class="imgbox img">
-                    <button id="lock2" class="iconbox pointer"><span class="fa-solid fa-unlock fa-xl"></span></button>
-                    <img class="box" id="randomColor2" src="../static/images/tarragon.jpg" alt="Tarragon">
-                    <p class="box namebox" id="randomColorName2">Tarragon</p>
-                    <p>
-                        <select id="select-tone2">
-                            <option value="all">Choose Tone</option>
-                            <option value="warm">Warm</option>
-                            <option value="cool">Cool</option>
-                            <option value="neutral">Neutral</option>
-                        </select>
-                    </p>
-                </div>
             </div>
 
+            <div class="imgbox img">
+                <button class="toggle-lock iconbox pointer"><span id="lock2" class="toggle-icon fa-solid fa-unlock fa-xl"></span></button>
+                <img class="box" id="randomColor2" src="../static/images/tarragon.jpg" alt="Tarragon">
+                <p class="box namebox" id="randomColorName2">Tarragon</p>
+                <div>
+                   <select id="select-tone2">
+                        <option value="all">Choose Tone</option>
+                        <option value="warm">Warm</option>
+                        <option value="cool">Cool</option>
+                        <option value="neutral">Neutral</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="imgbox img" style="display: none";>
+                <button class="toggle-lock iconbox pointer"><span id="lock3" class="toggle-icon fa-solid fa-unlock fa-xl"></span></button>
+                <img class="box" id="randomColor3" src="../static/images/pimento.jpg" alt="Pimento">
+                <p class="box namebox" id="randomColorName3">Pimento</p>
+                <div>
+                   <select id="select-tone3">
+                        <option value="all">Choose Tone</option>
+                        <option value="warm">Warm</option>
+                        <option value="cool">Cool</option>
+                        <option value="neutral">Neutral</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="imgbox img" style="display: none;">
+                <button class="toggle-lock iconbox pointer"><span id="lock4" class="toggle-icon fa-solid fa-unlock fa-xl"></span></button>
+                <img class="box" id="randomColor4" src="../static/images/sky.jpg" alt="Sky">
+                <p class="box namebox" id="randomColorName4">Sky</p>
+                <div>
+                    <select id="select-tone4">
+                        <option value="all">Choose Tone</option>
+                        <option value="warm">Warm</option>
+                        <option value="cool">Cool</option>
+                        <option value="neutral">Neutral</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="rowbox bottom-row-box">#Colors:
+            <button class="num-box pointer" onclick="toggleColors(2)">2 </button>
+            <button class="num-box pointer" onclick="toggleColors(3)">3 </button>
+            <button class="num-box pointer" onclick="toggleColors(4)">4</button>
             <button id="randomButton" class="pointer random-button">Randomize <span class="fa-solid fa-rotate fa-lg"></span></button>
         </div>
+        
+    </div>
 
         <script src="../static/colors.js"></script>
         <script src="../static/getRandomImage.js"></script>
-
+        <script src="../static/toggleLock.js"></script>
+        <script src="../static/toggleColors.js"></script>
     </body>
 </html>

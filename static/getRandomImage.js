@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function getRandomImage() {
+
     const selectedTone1 = document.getElementById('select-tone1').value;
     const selectedTone2 = document.getElementById('select-tone2').value;
 
@@ -28,7 +29,7 @@ function getRandomImage() {
         randomIndex2 = Math.floor(Math.random() * filteredColors2.length);
         randomColor1 = filteredColors1[randomIndex1];
         randomColor2 = filteredColors2[randomIndex2];
-    } while (randomColor1 === randomColor2);
+    } while (randomColor1 === randomColor2);          
 
     // Get the image element by its ID (the randomImage box in the html)
     const imageElement1 = document.getElementById('randomColor1');

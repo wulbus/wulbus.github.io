@@ -327,7 +327,7 @@
         id: 54,
         name: "Seagrass",
         url: "../static/images/seagrass.jpg",
-        tone: "cool"
+        tone: "neutral"
     },
     {
         id: 55,
@@ -434,7 +434,7 @@
     {
         id: 72,
         name: "Pimento",
-        url: "..static/images/pimento.jpg",
+        url: "../static/images/pimento.jpg",
         tone: "warm"
     }
 ];
