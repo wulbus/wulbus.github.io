@@ -16,6 +16,6 @@ document.querySelectorAll('.toggle-lock').forEach(button => {
         // & vice versa
         const iconBox = this;
         iconBox.classList.toggle('active');
-          // lets us add css styling to the box the icon is contained in
+          // lets us add css styling to the box the icon is contained in when active
     });
   });
