@@ -4,7 +4,6 @@ function toggleColors(num) {
         imgboxes[i].style.display = i < num ? 'flex' : 'none';
     }
 }
-
 // Set default to 2 colors
 window.onload = function() {
     toggleColors(2);
